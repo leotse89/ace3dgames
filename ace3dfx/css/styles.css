@@ -1,0 +1,728 @@
+/* CSS Reset and font */
+@font-face{
+	font-family:"Kimberley";
+	src:url("../font/kimberley.ttf");
+}
+
+*{ 
+	margin:0; 
+	padding:0; 
+}
+
+html{ 
+	overflow-y:scroll;
+}
+
+body{ 
+	background:#FFF;
+	font-size:14px; 
+	font-family:"Kimberley", sans-serif;
+}
+
+ol, ul{
+	list-style:none; 
+	margin:0;
+}
+
+ul li{ 
+	margin:0; 
+	padding:0;
+}
+
+h1{ 
+	margin-bottom:10px; 
+	color:#111111;
+}
+
+h2{
+	margin:5px 0 5px 0;
+}
+	
+a{ 
+	text-decoration:none;
+	color:#000;
+}
+
+a:hover{
+	color:#C03;	
+}
+
+p{ 
+	margin: 0 0 10px; 
+	line-height:1.4em; 
+	font-size:1.2em;
+}
+
+img{ 
+	display:block; 
+}
+
+#header_content, #main_content, #footer_content{
+	max-width:1024px;
+	padding:5px 5px 0 5px;
+	margin:auto;
+}
+
+#main_content{
+	margin-top:80px;
+}
+
+.ace{
+	color:#C03;
+}
+
+/* Top menu bar (navigation and social network buttons) styling */
+#header{
+	background-color:#FFF;
+	width:100%;
+	position:fixed;
+	top:0;
+	z-index:9999;
+	padding-bottom:5px;
+}
+
+#top_menu{
+	max-width:1024px;
+	padding-top:5px;
+}
+
+#top_menu #nav{
+	float:left;
+	width:30%;
+} 
+
+#top_menu #nav, .logo{
+	float:left;
+	width:40%;
+}
+
+#top_menu #nav ul{
+	padding-top:20px;
+}
+	
+#top_menu #nav li{
+	display:inline-block;
+}
+
+#top_menu #nav li a{
+	font-size:24px; 
+	text-transform:uppercase;
+	text-decoration:none;
+	color:#000;
+	padding-left:15px;
+}
+
+#top_menu #nav li a:hover{
+	color:#C03;
+}
+
+#top_menu #nav li a:focus{
+	color:#C03;
+}
+
+#social_network{
+	float:right;
+	margin-top:10px;
+	width:20%;
+}
+
+#social_network ul{
+	margin-left:35px;
+}
+
+#social_network ul li{
+	display:inline-block;
+	margin-left:10px;
+}
+
+#social_network ul li a img{
+	background-color:#000;
+	width:40px;
+	height:40px;
+}
+
+#social_network ul li a img:hover{
+	background-color:#C03;
+}
+
+/* Mobile Menu */
+#r_menu{
+	display:none;
+	position:absolute;
+	right:-5px;
+}
+
+#r_menu_options{
+	position:fixed;
+	top:60px;
+	right:5px;
+	background-color:#C03;
+	padding:10px 20px 10px 20px;
+	-moz-border-radius: 20px 0 20px 20px;
+    -webkit-border-radius: 20px 0 20px 20px;
+    -khtml-border-radius: 20px 0 20px 20px;
+    border-radius: 20px 0 20px 20px;
+}
+
+#r_menu_options ul li a{
+	color:#FFF;
+	font-size:24px;
+}
+
+#r_menu_options ul li a:hover{
+	color:#FF3;
+}
+
+#r_menu_options ul li a:focus{
+	color:#FF3;
+}
+
+/* Home Page Slideshow */
+#home_slides{
+	position:relative;
+	margin-bottom:52%;
+}
+
+#home_slides #slides a img{
+	position:absolute;
+	width:100%;
+}
+
+#pn_arrows{
+	position:absolute;
+	z-index:9000;
+	margin-top:46.5%;
+	left:12%;
+}
+
+#pn_arrows a img{
+	width:50px;
+	height:50px;
+}
+
+#prev{
+	position:absolute;
+}
+
+#prev img:hover, #next img:hover, #gg_prev img:hover, #gg_next img:hover{
+	width:52px;
+	height:52px;
+}
+
+#next{
+	position:relative;
+	left:46px;
+}
+
+/* Home Page Styling */
+#latest_games #left_col{
+	float:left;
+	width:49%;
+}
+
+#latest_games #right_col{
+	float:right;
+	width:49%;
+}
+
+#latest_games a img{
+	width:100%;
+	height:25%;
+	margin-bottom:15px;
+}
+
+#latest_games a img:hover{
+	opacity:0.7;
+}
+
+/* About Page Styling */
+#about_banner img{
+	position:relative;
+	width:100%;
+}
+
+#slogan{
+	position:absolute;
+	top:0;
+	width:90%;
+	margin:340px 10%;
+	font-size:2.2em;
+	color:#FFF;
+	text-shadow: 2px 2px 2px #000;
+}
+
+.white_text{
+	color:#FFF;
+}
+
+#about{
+	background-color:#81DAF5;
+	padding:15px 15px 10px 15px;
+}
+
+/* Game List Page styling */
+#games{
+	margin-top:20px;
+}
+
+#games a img{
+	width:100%;
+	height:25%;
+	padding-bottom:15px;
+}
+
+#games a img:hover{
+	opacity:0.7;	
+}
+
+#games #gp_left_col{
+	float:left;
+	width:49%;
+}
+
+#games #gp_right_col{
+	float:right;
+	width:49%;
+}
+
+/* For each game-description page */
+#game #gd_left_col{
+	width:60%;
+	float:left;
+}
+
+#gd_left_col img{
+	width:100%;
+}
+
+#game #gd_right_col{
+	position:relative;
+	width:39%;
+	left:61%;
+	height:600px;
+}
+
+#gd_right_col #ss_slide img{
+	position:absolute;
+	width:100%;
+	height:600px;
+}
+
+#gg_pn_arrows{
+	position:absolute;
+	z-index:9000;
+	top:575px;
+	left:37%;
+}
+
+#gg_pn_arrows img{
+	width:50px;
+	height:50px;
+}
+
+#gg_prev{
+	position:absolute;
+}
+
+#gg_next{
+	position:relative;
+	left:45px;
+}
+
+#google_btn{
+	float:left;
+	width:49%;
+}
+
+#apple_btn{
+	float:left;
+	width:49%;
+	margin-left:2%;
+}
+
+.clear{
+	clear:both;	
+}
+
+/* Contact Page Styling */
+#contact{
+	text-align:center;
+	background-color:#F7D358;
+	padding:15px 15px 10px 15px;
+}
+
+#contact_banner img{
+	position:relative;
+	width:100%;
+}
+
+#contact_message{
+	position:absolute;
+	top:0;
+	width:90%;
+	margin:340px 8%;
+	font-size:2.2em;
+	color:#FFF;
+	text-shadow: 2px 2px 2px #000;
+}
+
+.email{
+	color:#C03;
+}
+
+/* footer styling */
+#footer{
+	clear:both;
+	background:#000;
+	width:100%;
+}
+
+#footer_content{
+	color:#FFF;
+	font-size:15px;
+	text-align:center;
+}
+
+#footer_content #shortcuts ul li:first-child{
+	margin-left:10px;
+}
+
+#footer_content #shortcuts ul li{
+	display:inline-block;
+	margin-right:15px;
+	margin-top:10px;
+}
+
+#footer_content #shortcuts ul li a{
+	color:#FFF;
+}
+
+#footer_content #shortcuts ul li a:hover{
+	color:#C03;
+}
+
+#logo_bottom{
+	width:30%;
+	margin:auto;
+	padding:5px;
+}
+
+#copyright{
+	clear:both;
+	padding-bottom:15px;
+}
+
+/* layout for width 1032px */
+@media only screen and (max-width : 1032px){
+	#nav{
+		margin-top:5px;
+	}
+	
+	#social_network{
+		margin-top:20px;	
+	}
+	
+	#social_network ul li a img{
+		width:30px;
+		height:30px;
+	}
+	
+	#top_menu #nav li a{
+		font-size:18px;
+	}
+
+/* layout for width 960px */
+@media only screen and (max-width : 960px){
+	#slogan, #contact_message{
+		width:85%
+		margin:200px 8%;
+		font-size:2em;
+	}
+}
+
+/* layout for width 950px */
+@media only screen and (max-width : 950px){
+	#nav, #social_network{
+		display:none;
+	}
+	
+	#r_menu{
+		display:block;	
+	}
+	
+	#r_menu_icon{
+		float:right;
+		position:relative;
+		top:15px;
+		right:10px;
+	}
+	
+	#r_menu #r_menu_options{
+		display:none;	
+	}
+	
+	#logo_bottom{
+		width:35%;
+	}
+	
+	#slogan, #contact_message{
+		margin:300px 8%;
+		font-size:2em;
+	}
+		
+}
+
+@media only screen and (max-width : 920px){
+	#pn_arrows{
+		margin-top:46.2%;
+	}
+	
+	#gg_pn_arrows{
+		left:35.5%;	
+		top:555px;
+	}
+	
+	#game #gd_right_col, #gd_right_col #ss_slide img{
+		height:580px;	
+	}
+
+}
+
+@media only screen and (max-width : 860px){
+	#pn_arrows{
+		margin-top:46%;
+	}
+	
+	#slogan, #contact_message{
+		margin:300px 8%;
+		font-size:1.7em;
+	}
+	
+	#gg_pn_arrows{
+		left:34%;	
+	}
+}
+
+@media only screen and (max-width : 800px){
+	#pn_arrows{
+		margin-top:45.8%;
+	}
+	
+	#home_slides{
+		margin-bottom:53%;
+	}
+	
+	#slogan, #contact_message{
+		margin:300px 8%;
+		font-size:1.6em;
+	}
+	
+	#game #gd_right_col, #gd_right_col #ss_slide img{
+		height:580px;	
+	}
+	
+	#gg_pn_arrows{
+		left:33%;	
+	}
+}
+
+@media only screen and (max-width : 750px){
+	#pn_arrows{
+		margin-top:45.4%;
+	}
+	
+	#slogan, #contact_message{
+		margin:290px 8%;
+		font-size:1.5em;
+	}
+	
+	#gg_pn_arrows{
+		left:33%;	
+	}
+}
+
+@media only screen and (max-width : 700px){
+	#home_slides{
+		margin-bottom:54%;
+	}
+	
+	#slogan, #contact_message{
+		margin:270px 8%;
+		font-size:1.4em;
+	}
+	
+	#gg_pn_arrows{
+		left:32%;
+		top:535px;
+	}
+	
+	#game #gd_right_col, #gd_right_col #ss_slide img{
+		height:560px;	
+	}
+}
+
+@media only screen and (max-width : 670px){
+	#pn_arrows{
+		margin-top:45%;
+	}
+	
+	#slogan, #contact_message{
+		margin:250px 8%;
+		font-size:1.2em;
+	}
+	
+	#gg_pn_arrows{
+		left:32%;
+		top:515px;
+	}
+	
+	#game #gd_right_col, #gd_right_col #ss_slide img{
+		height:540px;	
+	}
+}
+
+@media only screen and (max-width : 620px){
+	#pn_arrows{
+		margin-top:44.5%;
+	}
+	
+	#slogan, #contact_message{
+		margin:240px 8%;
+		font-size:1.2em;
+	}
+	
+	#gg_pn_arrows{
+		left:30%;
+		top:495px;
+	}
+	
+	#game #gd_right_col, #gd_right_col #ss_slide img{
+		height:520px;	
+	}
+}
+
+@media only screen and (max-width : 570px){
+	#gg_pn_arrows{
+		left:28%;
+	}
+}
+
+@media only screen and (max-width : 550px){
+	#pn_arrows{
+		margin-top:44%;
+	}
+	
+	#slogan, #contact_message{
+		margin:220px 8%;
+		font-size:1.1em;
+	}
+	
+	#gg_pn_arrows{
+		left:25%;
+		top:455px;
+	}
+	
+	#game #gd_right_col, #gd_right_col #ss_slide img{
+		height:480px;	
+	}
+}
+
+@media only screen and (max-width : 520px){
+	#slogan, #contact_message{
+		margin:220px 8%;
+		font-size:1em;
+	}
+}
+
+@media only screen and (max-width : 490px){
+	#pn_arrows{
+		margin-top:43%;
+	}
+	
+	#home_slides{
+		margin-bottom:55%;
+	}
+}
+
+/* layout for width 480px = smartphone landscape */
+@media screen and (max-width: 480px){
+	#header{
+		height:80px;	
+	}
+	
+	.logo a img{
+		width:250px;
+		position:absolute;
+		top:20px;
+	}
+	
+	#home_slides{
+		margin-bottom:56%;
+	}
+	
+	#latest_games #left_col, #games #gp_left_col{
+		width:100%;
+	}
+	
+	#latest_games #right_col, #games #gp_right_col{
+		width:100%;
+		float:left;
+	}
+	
+	#game #gd_left_col{
+		width:100%;
+		float:left;
+	}
+	
+	#game #gd_right_col{
+		width:100%;
+		float:left;
+	}
+	
+	#slogan, #contact_message{
+		margin:200px 8%;
+		font-size:1em;	
+	}
+	
+	#gg_pn_arrows{
+		left:38%;
+		top:573px;
+	}
+	
+	#game #gd_right_col{
+		margin-top:20px;
+		width:100%;
+		left:0;
+		height:600px;	
+	}
+	
+	#gd_right_col #ss_slide img{
+		height:600px;
+	}
+			
+}
+
+@media screen and (max-width: 440px){
+	#slogan, #contact_message{
+		margin:190px 8%;	
+		font-size:0.9em;
+	}
+}
+
+@media screen and (max-width: 400px){
+	#home_slides{
+		margin-bottom:57%;
+	}
+	
+	#slogan, #contact_message{
+		margin:180px 8%;	
+		font-size:0.8em;
+	}
+}
+
+/* layout for width 320px = smartphone portrait */
+@media screen and (max-width: 320px){
+
+			
+}
+

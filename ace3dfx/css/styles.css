@@ -193,6 +193,7 @@ img{
 	z-index:9000;
 	margin-top:46.5%;
 	left:12%;
+	cursor:pointer;
 }
 
 #pn_arrows a img{
@@ -285,7 +286,7 @@ img{
 	width:49%;
 }
 
-/* For each game-description page */
+/* Page for each individual game */
 #game #gd_left_col{
 	width:60%;
 	float:left;
@@ -313,6 +314,7 @@ img{
 	z-index:9000;
 	top:575px;
 	left:37%;
+	cursor:pointer;
 }
 
 #gg_pn_arrows img{
